@@ -8,6 +8,8 @@ To create  the following images
  
  rotateZ
  
+ arrLength=200
+ 
  background(0)
  
 ![download (7)](https://user-images.githubusercontent.com/59300940/97656903-6d983f00-1a1d-11eb-98c3-a07f71ecdeaf.png)
