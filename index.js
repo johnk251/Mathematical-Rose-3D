@@ -7,7 +7,7 @@ let hue=0;
 //k is an integer,2k petals if k is even
 //k petals if k is odd.
 //experiment with different k values
-let k=4/5;
+let k=20;
 //defining the  Cartesian coordinate
 let x;
 let y;
@@ -15,8 +15,8 @@ let y;
 //arrays to store  cartesian coordinates
 let arrx=[];
 let arry=[];
-
-
+//variable to manage array size
+let arrLength=4
 
 
 function setup(){
@@ -41,7 +41,7 @@ function draw(){
   //rotateY(hue)
   //uncomment to experiment
  // rotateX(hue)
-  //rotateZ(hue)
+ // rotateZ(hue)
   
 //polar coordinate radii
  
@@ -78,7 +78,7 @@ line(arrx[i],arry[i],arrx[i+1],arry[i+1])
  
 
  //experimenting with different shapes
- strokeWeight(1); 
+ strokeWeight(0.1); 
  stroke(hue,100,100)
  noFill()
  push()
@@ -95,9 +95,10 @@ hue++;
 
 
 //remove unused values in the arrays to free up memory
-if (arrx.length>4){
+if (arrx.length>arrLength){
   arrx.shift();
-  arry.shift(); }
+  arry.shift(); 
+}
   
  
   
